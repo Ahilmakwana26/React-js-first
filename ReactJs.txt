@@ -1,0 +1,70 @@
+Introduction & Overview (0:00 - 17:48)
+
+What is ReactJS?: A JavaScript library used for building user interfaces (UI), created by Meta (Facebook).
+Purpose: It is designed to make building complex frontends easier than using plain HT
+ML, CSS, and JavaScript.
+Library vs Framework:
+The instructor explains that React is a library because it focuses on a specific feature (UI), whereas a framework provides a complete set of built-in tools.
+Setting up the environment: The instructor prepares the workspace in VS Code and uses the Live Server extension to display the output.
+
+Import & Export (17:48 - 28:47)
+Working with Multiple Files: Explanation of how to use import and export statements to work with multiple files (e.g., app.js and script.js).
+Real DOM vs Virtual DOM (28:47 - 35:00)
+
+DOM Overview: The Document Object Model (DOM) represents the structure of the webpage.
+Virtual DOM: React uses a Virtual DOM to make applications faster. It compares changes to the real DOM and only updates the specific parts that changed, avoiding unnecessary re-rendering.
+
+JSX:
+According to the video, JSX stands for JavaScript XML (0:33:23). It is a special syntax extension for JavaScript that allows you to write HTML-like code directly within your JavaScript files.
+Here are the key points regarding JSX:
+Combination of HTML and JS: It is essentially a combination of HTML and JavaScript, making UI development more intuitive (0:33:28).
+Easier UI Creation: Without JSX, creating HTML elements in JavaScript requires verbose commands like document.createElement (0:33:53).
+Simplified Syntax: JSX allows you to create elements, such as an h1 tag, simply by writing them out in a structure that looks like HTML (0:34:22).
+
+Vite:
+Based on the video, Vite is a modern build tool used to set up the React development environment (36:42). It is designed to be faster than traditional bundlers like Webpack because it utilizes native browser ESM (ECMAScript Modules) during development (38:15). In the video, it is specifically used to initialize a new React project with necessary configuration files (39:10).
+
+Now create Folder:
+npm create Vite
+enter project name
+choose framework
+choose variant
+done created folder
+cd first-react-pro
+  npm install ->install node modules for run server
+  npm run dev
+
+
+  about react js files
+  main.jsx -> this is main start point of react application
+  import React from 'react' -> load the React library
+  import ReactDOM from 'react-dom/client' -> render the components in HTML DOM
+  import App from './App.jsx' -> this is main component
+  ReactDOM.createRoot(document.getElementById('root')) -> it tell to react render the app into HTML div who have root id
+  App.jsx (Main Component) -> here main component of app
+
+
+  Full Flow : 
+  npm run dev
+      ↓
+Vite Dev Server Start (Node.js)
+      ↓
+Browser open localhost:5173
+      ↓
+index.html load
+      ↓
+<script src="/src/main.jsx">
+      ↓
+main.jsx run
+      ↓
+ReactDOM createRoot
+      ↓
+<App /> component load
+      ↓
+App.jsx return JSX
+      ↓
+React convert JSX → HTML
+      ↓
+render inside <div id="root">
+
+package.json -> it contain the dependencies , versions
