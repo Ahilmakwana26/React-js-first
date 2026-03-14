@@ -67,4 +67,4 @@ React convert JSX → HTML
       ↓
 render inside <div id="root">
 
-package.json -> it contain the dependencies , versions
+package.json -> it contain the dependencies , versions  
