@@ -1,17 +1,18 @@
 import React from 'react'
+import Cardbtn from './components/card'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <>
     {/* Fregments */}
-    <div>
-      
-      <h1>Hi this is AHIl</h1>
-      <h2>Learning Blender</h2>
-      <h3>Leaning Unity</h3>
-    </div>
-    <div>
-      <h1>Thsi is React js</h1>
+    <div id='main'>
+      <Navbar />
+      <div className='card'>
+        <h1>Hi i am Ahil Makwana</h1>
+        <p>i learn blender , react , unitu and much more</p>
+        <Cardbtn />
+      </div>
     </div>
     </>
   )
